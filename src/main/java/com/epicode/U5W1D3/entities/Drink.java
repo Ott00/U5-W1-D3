@@ -1,10 +1,16 @@
 package com.epicode.U5W1D3.entities;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
+@Entity
+@Table(name = "drinks")
+@NoArgsConstructor
 public class Drink extends Item {
     private String name;
 

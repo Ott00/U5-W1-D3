@@ -42,7 +42,7 @@ public class AppConfig {
         List<Topping> toppingList = new ArrayList<>();
         toppingList.add(toppingTomatoBean());
         toppingList.add(toppingCheeseBean());
-        return new Pizza("Pizza Margherita", toppingList, false);
+        return new Pizza("Pizza Margherita", toppingList, false, 4.5);
     }
 
     @Bean(name = "hawaiian_pizza")
@@ -52,7 +52,7 @@ public class AppConfig {
         toppingList.add(toppingCheeseBean());
         toppingList.add(toppingHamBean());
         toppingList.add(toppingPineappleBean());
-        return new Pizza("Hawaiian Pizza", toppingList, false);
+        return new Pizza("Hawaiian Pizza", toppingList, false, 8);
     }
 
     @Bean(name = "salami_pizza")
@@ -61,7 +61,7 @@ public class AppConfig {
         toppingList.add(toppingTomatoBean());
         toppingList.add(toppingCheeseBean());
         toppingList.add(toppingSalamiBean());
-        return new Pizza("Salami Pizza", toppingList, false);
+        return new Pizza("Salami Pizza", toppingList, false, 6.5);
     }
 
     @Bean(name = "salami_pizza_xl")
@@ -70,7 +70,7 @@ public class AppConfig {
         toppingList.add(toppingTomatoBean());
         toppingList.add(toppingCheeseBean());
         toppingList.add(toppingSalamiBean());
-        return new Pizza("Salami Pizza XL", toppingList, true);
+        return new Pizza("Salami Pizza XL", toppingList, true, 12);
     }
 
     @Bean(name = "lemonade")
